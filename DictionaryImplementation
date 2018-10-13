@@ -1,0 +1,21 @@
+# each death should have its own dictionary
+# loop through all data 
+
+# CaseNumber,Date,Sex,Race,Age,Residence City,Residence State,Residence County,Death City,Death State,Death County,Location,DescriptionofInjury,InjuryPlace,ImmediateCauseA,Heroin,Cocaine,Fentanyl,Oxycodone,Oxymorphone,EtOH,Hydrocodone,Benzodiazepine,Methadone,Amphet,Tramad,Morphine (not heroin),Other,Any Opioid,MannerofDeath,AmendedMannerofDeath,DeathLoc
+
+# instantiating a dictionary (key, value) pairs
+dict = { 'CaseNumber' : 'x', 'Date' : 'x', 'Sex' : 'x', 'Race' : 'x', 'Age' : 'x', 'Residence City' : 'x', 'Residence State' : 'x', 'Residence County' : 'x', 'Death City' : 'x', 'Death State' : 'x', 'Death County' : 'x', 'Location' : 'x', 'DescriptionofInjury' : 'x', 'InjuryPlace' : 'x', 'ImmediateCauseA' : 'x', 'Heroin' : 'x', 'Cocaine' : 'x', 'Fentanyl' : 'x', 'Oxycodone' : 'x', 'Oxymorphone' : 'x', 'EtOH' : 'x', 'Hydrocodone' : 'x', 'Benzodiazepine' : 'x', 'Methadone' : 'x', 'Amphet' : 'x', 'Tramad' : 'x', 'Morphine (not heroin)' : 'x', 'Other' : 'x', 'Any Opiod' : 'x', 'MannerofDeath' : 'x', 'AmendedMannerofDeath' : 'x', 'DeathLoc' : 'x' }
+
+#nested = {
+    Race: [
+        (1, 'White'),
+        (2, 'Black'),
+        (3, 'Hispanic'),
+        (4, 'Asian'),
+        (5, 'Unknown),
+    ],
+    : [
+        (3, 'c'),
+        (4, 'd'),
+    ],
+}
