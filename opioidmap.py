@@ -6,15 +6,15 @@ from collections import Counter
 
 import csv
 import sys
-import numpy
-import scipy.spatial
-import statistics
-import bisect
-import json
-import math
-from sklearn.model_selection import StratifiedShuffleSplit
-from sklearn.preprocessing import StandardScaler
-from sklearn.decomposition import PCA
+# import numpy
+# import scipy.spatial
+# import statistics
+# import bisect
+# import json
+# import math
+# from sklearn.model_selection import StratifiedShuffleSplit
+# from sklearn.preprocessing import StandardScaler
+# from sklearn.decomposition import PCA
 
 import time
 
@@ -31,16 +31,30 @@ data = []
 
 for i in range(1, len(dataRep)-2, 2):
     line = dataRep[i]
-    line.append(dataRep[i+1])
+    #line.append(dataRep[i+1])
     data.append(line)
     #data = data.astype(numpy.float)
     #classification = line[0]
     #trainDatum = DataObject(classification, data)
     #self.trainingData.append(trainDatum)
 
-print(data[0])
-print()
-print(data[1])
-print()
-print(data[2])
-print()
+# print(data[0])
+# print("K")
+# print(data[1])
+# print("K")
+# print(data[2])
+# print("K")
+
+ 
+dataArray = []
+for dataPoint in data:
+    oneLine = []
+    for dim in dataPoint:
+        oneLine.append(dim)
+    dataArray.append(oneLine)
+
+
+
+for point in dataArray:
+    print(point)
+
