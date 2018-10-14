@@ -8,6 +8,8 @@ from tempfile import mkdtemp
 from werkzeug.exceptions import default_exceptions
 from werkzeug.security import check_password_hash, generate_password_hash
 from flask_session import Session
+from opioidmap import cool
+from predictions import brenno
 
 # Configure application
 app = Flask(__name__)
@@ -34,14 +36,14 @@ Session(app)
 
 @app.route("/")
 def home():
-    person = 'Bob'
+    person = cool()
     return render_template("index.html", name = person )
 
 
 
 @app.route("/machineLearning")
 def learn():
-    thing = "LEARN"
+    thing = brenno()
     return render_template("machineLearning.html", name = thing)
 
 
