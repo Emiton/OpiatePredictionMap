@@ -5,5 +5,11 @@
 {% endblock %}
 
 {% block main %}
-<h1>Hello, {{name}}</h1>
+<h1>Hello, Brenno</h1>
+<ul>
+    {%for thing in name%}
+    <li>{{thing}}</li>
+    <li>#######################</li>
+    {% endfor %}
+</ul>
 {% endblock %}
