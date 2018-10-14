@@ -181,22 +181,13 @@ def brenno():
 
     y_pred = classifier.predict(X_test)
 
+    z1 = classification_report(y_test, y_pred)
+    a1 = confusion_matrix(y_test, y_pred)
+    w1 = accuracy_score(y_test, y_pred)
+
     print(classification_report(y_test, y_pred))
     print(confusion_matrix(y_test, y_pred))
     print('Accuracy is ', accuracy_score(y_test, y_pred))
-
-    ## Linear Regression
-    # print('=' * 20, 'Linear Regression', '=' * 20)
-    #
-    # from sklearn.linear_model import LinearRegression
-    # classifier = LinearRegression()
-    # classifier.fit(X_train, y_train)
-    #
-    # y_pred = classifier.predict(X_test)
-    #
-    # print(classification_report(y_test, y_pred))
-    # print(confusion_matrix(y_test, y_pred))
-    # print('Accuracy is ', accuracy_score(y_test, y_pred))
 
     ## Logistic Regression
     print('=' * 20, 'Logistic Regression', '=' * 20)
@@ -206,6 +197,10 @@ def brenno():
     classifier.fit(X_train, y_train)
 
     y_pred = classifier.predict(X_test)
+
+    z2 = classification_report(y_test, y_pred)
+    a2 = confusion_matrix(y_test, y_pred)
+    w2 = accuracy_score(y_test, y_pred)
 
     print(classification_report(y_test, y_pred))
     print(confusion_matrix(y_test, y_pred))
@@ -220,6 +215,10 @@ def brenno():
 
     y_pred = classifier.predict(X_test)
 
+    z3 = classification_report(y_test, y_pred)
+    a3 = confusion_matrix(y_test, y_pred)
+    w3 = accuracy_score(y_test, y_pred)
+
     print(classification_report(y_test, y_pred))
     print(confusion_matrix(y_test, y_pred))
     print('Accuracy is ', accuracy_score(y_test, y_pred))
@@ -232,6 +231,10 @@ def brenno():
     classifier.fit(X_train, y_train)
 
     y_pred = classifier.predict(X_test)
+
+    z4 = classification_report(y_test, y_pred)
+    a4 = confusion_matrix(y_test, y_pred)
+    w4 = accuracy_score(y_test, y_pred)
 
     print(classification_report(y_test, y_pred))
     print(confusion_matrix(y_test, y_pred))
@@ -246,7 +249,14 @@ def brenno():
 
     y_pred = classifier.predict(X_test)
 
+    z5 = classification_report(y_test, y_pred)
+    a5 = confusion_matrix(y_test, y_pred)
+    w5 = accuracy_score(y_test, y_pred)
+
     print(classification_report(y_test, y_pred))
     print(confusion_matrix(y_test, y_pred))
     print('Accuracy is ', accuracy_score(y_test, y_pred))
-    return classification_report(y_test, y_pred)
+
+    masterArray = [z1,a1,w1,z2,a2,w2,z3,a3,w3,z4,a4,w4,z5,a5,w5]
+
+    return masterArray
