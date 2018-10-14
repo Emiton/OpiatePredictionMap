@@ -36,3 +36,22 @@ Session(app)
 def home():
     person = 'Bob'
     return render_template("index.html", name = person )
+
+
+
+@app.route("/machineLearning")
+def learn():
+    thing = "LEARN"
+    return render_template("machineLearning.html", name = thing)
+
+
+@app.route("/plotData")
+def plot():
+    thing = 'PLOT'
+    return render_template("plotData.html", name = thing)
+
+
+@app.route("/heatMap")
+def heat():
+    thing = "MAP"
+    return render_template("heatMap.html", name = thing)
